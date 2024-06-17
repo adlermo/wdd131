@@ -3,5 +3,5 @@ const copyrightYear = document.querySelector('#currentYear');
 
 const today = new Date();
 
-lastModified.innerHTML = document.lastModified;
-copyrightYear.innerHTML = `Copyright ${today.getFullYear()}.`;
+lastModified.innerHTML = `Last Modified in ${document.lastModified}`;
+copyrightYear.innerHTML = `©${today.getFullYear()}`;
