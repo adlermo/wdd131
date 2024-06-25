@@ -34,6 +34,17 @@ header > nav > a {
   font-size: 1.5em;
 }
 
+header > nav > a {
+  padding: 1.2em;
+  text-decoration: none;
+}
+
+header > nav > a:hover {
+  color: var(--tekhelet);
+  background-color: var(--flash-white);
+  border-top: 2px solid var(--xanthous);
+}
+
 main {
   background-color: var(--black);
   padding-bottom: 20vh;
