@@ -1,0 +1,105 @@
+:root {
+  --timberwolf: #dbd3d8;
+  --tekhelet: #3d348b;
+  --flash-white: #eff1f3;
+  --xanthous: #e6af2e;
+  --black: #2b2826;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--flash-white);
+}
+
+header {
+  background-color: var(--tekhelet);
+
+  width: 100%;
+  height: 10vh;
+  padding: 1em 2em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 25vw;
+}
+
+header > nav > a {
+  font-size: 1.5em;
+}
+
+main {
+  background-color: var(--black);
+  padding-bottom: 20vh;
+}
+
+main > h1 {
+  padding: 1.5em 0 0.2em 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section {
+  max-width: 1366px;
+  margin: 1em auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main > section > figure {
+  margin: 1em;
+
+  border: thin var(--xanthous) solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+
+  max-width: 480px;
+  min-width: 280px;
+}
+
+main > section > figure > img {
+  max-width: 480px;
+  min-width: 280px;
+}
+
+main > section > figure > figcaption {
+  background-color: var(--timberwolf);
+  color: var(--black);
+  font-weight: bold;
+  padding: 3px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  background-color: var(--tekhelet);
+
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  margin: 3px auto;
+}
+
+footer > p#lastModified {
+  color: var(--xanthous);
+}
