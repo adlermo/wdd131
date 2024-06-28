@@ -28,7 +28,7 @@ h6 {
   font-family: var(--font-montserrat);
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 880px) {
   header {
     height: fit-content;
     flex-wrap: wrap;
