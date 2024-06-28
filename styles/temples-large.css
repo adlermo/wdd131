@@ -39,12 +39,8 @@ h6 {
   }
 
   header > nav {
-    display: none;
     background-color: var(--tekhelet);
     width: 100%;
-    position: absolute;
-    top: 1em;
-    left: 0;
   }
 
   header > nav > ul {
