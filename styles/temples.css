@@ -24,22 +24,27 @@ header {
   align-items: center;
 }
 
-header > nav {
+header > input {
+  display: none;
+}
+
+header > nav > ul {
   display: flex;
   justify-content: space-between;
   min-width: 25vw;
 }
 
-header > nav > a {
-  font-size: 1.5em;
+header > nav > ul > li {
+  list-style: none;
 }
 
-header > nav > a {
+header > nav > ul > li > a {
+  font-size: 1.5em;
   padding: 1.2em;
   text-decoration: none;
 }
 
-header > nav > a:hover {
+header > nav > ul > li > a:hover {
   color: var(--tekhelet);
   background-color: var(--flash-white);
   border-top: 2px solid var(--xanthous);
@@ -62,19 +67,20 @@ main > section {
   max-width: 1366px;
   margin: 1em auto;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  /* grid-gap: 25px; */
+
+  place-items: center;
 }
 
 main > section > figure {
   margin: 1em;
 
-  border: thin var(--xanthous) solid;
+  border: 1px var(--xanthous) solid;
   display: flex;
   flex-flow: column;
-  padding: 5px;
+  padding: 2px;
 
   max-width: 480px;
   min-width: 280px;
