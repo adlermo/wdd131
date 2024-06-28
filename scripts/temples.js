@@ -1,11 +1,3 @@
-const lastModified = document.querySelector('#lastModified');
-const copyrightYear = document.querySelector('#currentYear');
-
-const today = new Date();
-
-lastModified.innerHTML = `Last Modified in ${document.lastModified}`;
-copyrightYear.innerHTML = `©${today.getFullYear()}`;
-
 const toggleNavMenu = document.querySelector('#toggleNavMenu');
 const navMenu = document.querySelector('#navMenu');
 
