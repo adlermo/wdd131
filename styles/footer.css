@@ -1,0 +1,26 @@
+:root {
+  --xanthous: #e6af2e;
+  --tekhelet: #3d348b;
+}
+
+footer {
+  position: fixed;
+  background-color: var(--tekhelet);
+
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  margin: 3px auto;
+}
+
+footer > p#lastModified {
+  color: var(--xanthous);
+}

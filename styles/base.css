@@ -143,23 +143,3 @@ main > section.card:nth-child(1) > section > p:nth-child(5) {
   grid-column: 2 / span 2;
   grid-row: 3;
 }
-
-footer {
-  background-color: var(--tekhelet);
-
-  width: 100vw;
-  height: 10vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer > p {
-  margin: 3px auto;
-}
-
-footer > p#lastModified {
-  color: var(--xanthous);
-}
