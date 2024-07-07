@@ -37,6 +37,7 @@
   }
 
   #icon > img {
+    display: block;
     max-width: 128px;
     margin: 0 auto;
   }

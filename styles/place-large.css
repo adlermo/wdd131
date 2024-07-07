@@ -75,7 +75,7 @@ header {
     background-image: url('../images/weather_icon.svg');
   }
 
-  main > section > h2 > div {
+  #icon {
     display: none;
   }
 
