@@ -6,15 +6,21 @@
       name="description"
       content="Place weather activity for week 03 of WDD 131 - Dynamic Web Fundamentals BYU course"
     />
-    <meta name="author" content="Adler M Orteney" />
+    <meta name="author" content="Adler M Orteney">
 
-    <meta charset="utf-8" />
-    <!-- TODO: Remove autoclose on meta tag -->
+    <meta charset="utf-8">
 
     <title>Japan Weather - Adler M Orteney</title>
 
-    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/place-large.css" />
+    <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
@@ -23,27 +29,24 @@
     </header>
 
     <main>
-      <figure>
-        <source srcset="images/place-x-large.jpg" media="min-width: 1920px" />
-        <source srcset="images/place-large.jpg" media="min-width: 1024px" />
-        <source srcset="images/place-medium.jpg" media="min-width: 720px" />
-        <img
-          src="images/place-small.jpg"
-          alt="Japan Fuji Mountain"
-          width="700"
-        />
-      </figure>
+      <picture>
+        <source srcset="images/place-x-large.webp" media="(min-width: 1900px)" />
+        <source srcset="images/place-large.webp" media="(min-width: 1000px)" />
+        <source srcset="images/place-medium.webp" media="(min-width: 700px)" />
+
+        <img src="images/place-small.webp" alt="Japan Fuji Mountain" />
+      </picture>
 
       <section class="data">
         <h2>Data</h2>
-        <p><strong>Area:</strong> 587,041 sq km</p>
-        <p><strong>Population:</strong> 27,691,018</p>
-        <p><strong>Capital:</strong> Antananarivo</p>
-        <p><strong>Languages:</strong> Malagasy, French</p>
-        <p><strong>Currency:</strong> Malagasy Ariary</p>
-        <p><strong>Time Zone:</strong> UTC+3</p>
-        <p><strong>Calling Code:</strong> +261</p>
-        <p><strong>Internet TLD:</strong> .mg</p>
+        <p><strong>Area:</strong> 377,975 sq km</p>
+        <p><strong>Population:</strong> 125,960,000</p>
+        <p><strong>Capital:</strong> Tokyo</p>
+        <p><strong>Languages:</strong> Japanese</p>
+        <p><strong>Currency:</strong> Japanese Yen (JPY)</p>
+        <p><strong>Time Zone:</strong> UTC+9</p>
+        <p><strong>Calling Code:</strong> +81</p>
+        <p><strong>Internet TLD:</strong> .jp</p>
       </section>
 
       <section class="weather">
@@ -54,10 +57,10 @@
           </div>
         </h2>
 
-        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Temperature:</strong> 25°C</p>
         <p><strong>Conditions:</strong> Partly Cloudy</p>
-        <p><strong>Wind:</strong> 5 km/h</p>
-        <p><strong>Wind Chill:</strong> 9.8°C</p>
+        <p><strong>Wind:</strong> 15 km/h</p>
+        <p><strong>Wind Chill:</strong> 24°C</p>
       </section>
     </main>
 

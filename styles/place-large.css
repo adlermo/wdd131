@@ -33,19 +33,65 @@ body {
 }
 
 header {
-  background-color: var(--tekhelet);
-
-  padding: 1em 0;
+  text-align: center;
   width: 100vw;
+  padding: 1em 0;
+  background-color: var(--tekhelet);
+  border-bottom: 10px solid var(--xanthous);
 }
 
-main {
-  padding-bottom: 120px;
-}
+@media screen and (min-width: 701px) {
+  main {
+    height: 90vh;
+  }
 
-main > section > h2 {
-  color: var(--black);
-  padding: 1em 0 1.5em 0;
+  main > picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main > section {
+    padding: 1em;
+
+    background-color: var(--flash-white);
+    opacity: 0.8;
+  }
+
+  main > section > h2 {
+    background-color: var(--tekhelet);
+    text-align: left;
+    padding: 0.8em;
+    margin-bottom: 1em;
+
+    position: relative;
+    left: -1em;
+  }
+
+  main > section > h2::after {
+    left: 0;
+    height: 10vh;
+    opacity: 1;
+    background-image: url('../images/weather_icon.svg');
+  }
+
+  main > section > h2 > div {
+    display: none;
+  }
+
+  main > section.data {
+    position: fixed;
+
+    left: 2em;
+    top: 20vh;
+  }
+
+  main > section.weather {
+    position: fixed;
+
+    right: 2em;
+    bottom: 20vh;
+  }
 }
 
 main > section > p {
@@ -60,4 +106,14 @@ main > section > p > strong {
   display: block;
   text-align: right;
   color: var(--black);
+}
+
+#icon > img::after {
+  background-color: var(--black);
+  width: 20px;
+}
+
+#icon > img {
+  max-width: 128px;
+  margin: 0 auto;
 }
