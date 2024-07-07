@@ -15,14 +15,54 @@
 
     <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/place-large.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Japan</h1>
+    </header>
 
-    <main></main>
+    <main>
+      <figure>
+        <source srcset="images/place-x-large.jpg" media="min-width: 1920px" />
+        <source srcset="images/place-large.jpg" media="min-width: 1024px" />
+        <source srcset="images/place-medium.jpg" media="min-width: 720px" />
+        <img
+          src="images/place-small.jpg"
+          alt="Japan Fuji Mountain"
+          width="700"
+        />
+      </figure>
+
+      <section class="data">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 587,041 sq km</p>
+        <p><strong>Population:</strong> 27,691,018</p>
+        <p><strong>Capital:</strong> Antananarivo</p>
+        <p><strong>Languages:</strong> Malagasy, French</p>
+        <p><strong>Currency:</strong> Malagasy Ariary</p>
+        <p><strong>Time Zone:</strong> UTC+3</p>
+        <p><strong>Calling Code:</strong> +261</p>
+        <p><strong>Internet TLD:</strong> .mg</p>
+      </section>
+
+      <section class="weather">
+        <h2>
+          Weather
+          <div id="icon">
+            <img src="images/weather_icon.svg" alt="weather icon" />
+          </div>
+        </h2>
+
+        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+        <p><strong>Wind Chill:</strong> 9.8°C</p>
+      </section>
+    </main>
 
     <footer>
-      <p><span id="currentYear"></span> 🎺 Adler Mesquita Orteney 🎺 Brazil</p>
+      <p><span id="currentYear"></span> 🎺 Adler Mesquita Orteney 🎺 Japan</p>
       <p id="lastModified"></p>
     </footer>
 

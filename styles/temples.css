@@ -5,7 +5,7 @@
   --flash-white: #eff1f3;
   --black: #2b2826;
   --font-montserrat: 'Montserrat', sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
+  --font-roboto: 'Roboto', monospace;
 }
 
 body {

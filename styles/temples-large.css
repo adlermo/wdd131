@@ -7,7 +7,7 @@
   --xanthous: #e6af2e;
   --black: #2b2826;
   --font-montserrat: 'Montserrat', sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
+  --font-roboto: 'Roboto', monospace;
 }
 
 * {
