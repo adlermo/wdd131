@@ -99,6 +99,10 @@ const temples = [
 ];
 
 const createTempleCards = (templeList = temples) => {
+  const cardsContainer = document.getElementById('templeCardList');
+
+  cardsContainer.innerHTML = '';
+
   templeList.forEach((temple) => {
     const card = document.createElement('section');
     const name = document.createElement('h3');
@@ -121,8 +125,7 @@ const createTempleCards = (templeList = temples) => {
     card.appendChild(area);
     card.appendChild(document.createElement('figure').appendChild(img));
 
-    document.getElementById('templeCardList').innerHTML = '';
-    document.getElementById('templeCardList').appendChild(card);
+    cardsContainer.appendChild(card);
   });
 };
 
