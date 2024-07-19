@@ -121,6 +121,7 @@ const createTempleCards = (templeList = temples) => {
     card.appendChild(area);
     card.appendChild(document.createElement('figure').appendChild(img));
 
+    document.getElementById('templeCardList').innerHTML = '';
     document.getElementById('templeCardList').appendChild(card);
   });
 };
@@ -142,8 +143,6 @@ const filterTemplesByDate = (filter = 'ot', value = '1900') => {
       (t) => new Date(t.dedicated) > new Date(value)
     );
 
-  document.getElementById('templeCardList').innerHTML = '';
-
   createTempleCards(filteredTemples);
 };
 
@@ -155,8 +154,6 @@ const filterTemplesBySize = (filter = 'gt', value = '90000') => {
 
   // Lesser than
   if (filter == 'lt') filteredTemples = temples.filter((t) => t.area < value);
-
-  document.getElementById('templeCardList').innerHTML = '';
 
   createTempleCards(filteredTemples);
 };
