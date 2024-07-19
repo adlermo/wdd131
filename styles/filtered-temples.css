@@ -30,6 +30,8 @@ section#templeCardList > section > img {
   border: 1px var(--timberwolf) solid;
   margin-top: 1em;
 
-  width: 400;
-  height: 250;
+  width: 400px;
+  height: 250px;
+  object-fit: none;
+  object-position: center bottom;
 }
