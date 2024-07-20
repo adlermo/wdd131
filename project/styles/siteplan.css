@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Sono:wght@200..800&display=swap');
+
+:root {
+  --font-mono: 'Sono', sans-serif, monospace;
+  --font-serif: 'Antic Didone', serif;
+}
