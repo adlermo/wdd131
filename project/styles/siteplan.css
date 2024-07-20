@@ -3,4 +3,16 @@
 :root {
   --font-mono: 'Sono', sans-serif, monospace;
   --font-serif: 'Antic Didone', serif;
+
+  --dark-blue: #124e78;
+  --light-blue: #3da5d9;
+  --dark-green: #497048;
+  --sand: #f0f0c9;
+  --salmon: #e15a51;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
