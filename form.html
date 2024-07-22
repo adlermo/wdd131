@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form for product review">
+    <meta name="author" content="Adler M Orteney">
+
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required tabindex="1">
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Dynamic options will be inserted here -->
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset tabindex="2">
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                <label><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                <label><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                <label><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required tabindex="3">
+
+            <!-- Useful Features -->
+            <fieldset tabindex="4" class="column">
+                <legend>
+                    Which features did you find useful in the product?
+                    <br>
+                    <em>(Check all that apply)</em>
+                </legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Ease  of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+                <label><input type="checkbox" id="feature5" name="features" value="Cost Benefit"> Cost Benefit</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review: <span>(Optional)</span></label>
+            <textarea id="review" name="review" tabindex="5"></textarea>
+
+            <!-- User Name -->
+            <label for="userName">Your Name: <span>(Optional)</span></label>
+            <input type="text" id="userName" name="userName" tabindex="6">
+
+            <!-- Form Submission Button -->
+            <input type="submit" value="Post Product Review" tabindex="7">
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> 🎺 Adler Mesquita Orteney 🎺 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+
+</html>

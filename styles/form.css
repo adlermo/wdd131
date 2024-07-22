@@ -1,0 +1,85 @@
+:root {
+  --timberwolf: #dbd3d8;
+  --tekhelet: #3d348b;
+  --flash-white: #eff1f3;
+  --xanthous: #e6af2e;
+  --black: #2b2826;
+}
+
+header {
+  background-color: var(--tekhelet);
+  height: 8vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  color: var(--flash-white);
+}
+
+main {
+  display: block;
+
+  max-width: 500px;
+  margin: 1em auto;
+  background-color: var(--black);
+
+  padding: 1em 2em;
+  border-radius: 3px;
+}
+
+main > form {
+  display: flex;
+  flex-direction: column;
+}
+
+main > form > select,
+main > form > input,
+main > form > fieldset,
+main > form > textarea,
+main > form > label {
+  margin-bottom: 0.8em;
+  padding: 0.5em 0;
+}
+
+main > form > label > span {
+  font-size: smaller;
+  color: var(--xanthous);
+}
+
+main > form > fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > form > fieldset[tabindex='4'] {
+  flex-direction: column;
+}
+
+main > form > fieldset[tabindex='2'] > label {
+  color: var(--xanthous);
+}
+
+main > form > textarea {
+  min-height: 10em;
+}
+
+main > form > textarea,
+main > form > select,
+main > form > input {
+  padding: 0.5em;
+  color: var(--black);
+}
+
+main > form > input[type='submit'] {
+  background-color: var(--xanthous);
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 1rem;
+}
+
+footer {
+  position: relative;
+}
