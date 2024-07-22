@@ -72,12 +72,11 @@ header > nav > ul > li > a {
   display: block;
   padding: 1em 2em;
   margin: 0 2em;
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 }
 
 header > nav > ul > li > a:hover {
-  color: var(--dark-blue);
   background-color: var(--sand);
   box-shadow: inset 0 -10px 5px -10px var(--salmon);
 }
