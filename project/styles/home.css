@@ -183,6 +183,7 @@ main > form > label {
   margin: 0.5rem;
 }
 
+main > form > label > textarea,
 main > form > label > input {
   padding: 0.5rem 0.8rem;
   width: 100%;

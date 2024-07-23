@@ -9,7 +9,6 @@
 
     <title>Brazinfo Inc Commute</title>
 
-
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -36,22 +35,24 @@
         <form action="index.html" method="get">
             <label for="lineId">
                 <span>*</span>Employee Name <br>
-                <input type="text" name="lineId" id="lineId" required>
+                <input type="text" name="lineId" id="lineId" required placeholder="Adler">
             </label>
 
             <label for="address">
                 <span>*</span>Desired Address <br>
-                <input type="url" name="address" id="address" required>
+                <input type="url" name="address" id="address" required
+                    placeholder="www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14620.942265787566!2d-46.7381793!3d-23.631733399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55ae4bbe9829%3A0xfff494ced73f1e25!2sBarber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1721707549422!5m2!1spt-BR!2sbr">
             </label>
 
             <label for="phone">
                 Phone number <br>
-                <input type="tel" name="phone" id="phone">
+                <input type="tel" name="phone" id="phone" placeholder="+55 11 99919-8409">
             </label>
 
             <label for="desc">
                 Describe Your Request <br>
-                <textarea name="desc" id="desc" rows="10" cols="31"></textarea>
+                <textarea name="desc" id="desc" rows="10" cols="31"
+                    placeholder="I live too far from the nearest bus stop..."></textarea>
             </label>
 
             <input type="submit" value="Send My Request">
