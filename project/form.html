@@ -33,7 +33,26 @@
     </header>
 
     <main>
-        <form action="" method="post">
+        <form action="index.html" method="get">
+            <label for="lineId">
+                <span>*</span>Employee Name <br>
+                <input type="text" name="lineId" id="lineId" required>
+            </label>
+
+            <label for="address">
+                <span>*</span>Desired Address <br>
+                <input type="url" name="address" id="address" required>
+            </label>
+
+            <label for="phone">
+                Phone number <br>
+                <input type="tel" name="phone" id="phone">
+            </label>
+
+            <label for="desc">
+                Describe Your Request <br>
+                <textarea name="desc" id="desc" rows="10" cols="31"></textarea>
+            </label>
 
             <input type="submit" value="Send My Request">
         </form>

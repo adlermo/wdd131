@@ -33,16 +33,17 @@
     </header>
 
     <main>
-        <form action="" method="post">
+        <form action="form.html" method="get">
             <label for="user">
-                Username:
-                <input type="text" name="user" id="user">
+                <span>*</span>Username <br>
+                <input type="text" name="user" id="user" required>
             </label>
 
             <label for="pass">
-                Password:
-                <input type="password" name="pass" id="pass">
+                <span>*</span>Password <br>
+                <input type="password" name="pass" id="pass" required>
             </label>
+
             <input type="submit" value="Authenticate" id="auth">
         </form>
     </main>

@@ -155,3 +155,48 @@ main > section.lines > section.line_info > iframe#busStopAddress {
     width: 100%;
   }
 }
+
+/* Form stylings */
+
+main > form {
+  background-color: var(--sand);
+  padding: 1rem;
+
+  max-width: 25rem;
+  max-width: 37.5rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid var(--dark-blue);
+}
+
+main > form > * {
+  width: 50%;
+}
+
+main > form > label {
+  margin: 0.5rem;
+}
+
+main > form > label > input {
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+}
+
+main > form > input[type='submit'] {
+  padding: 1rem;
+  margin: 1rem;
+
+  background-color: var(--dark-green);
+  color: var(--white);
+}
+
+main > form > label > span {
+  color: var(--salmon);
+  font-weight: bolder;
+}
