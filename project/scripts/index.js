@@ -1,6 +1,5 @@
 let lines = localStorage.getItem('lines')
 
-
 if (lines != null || lines.length == 0) {
     lines = [
         { id: "Alpha", address: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.4791080620844!2d-46.735045855210686!3d-23.639977425443018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5142e22e24ab%3A0x9fff96ed2e1bbeb9!2sAv.%20Giovanni%20Gronchi%2C%206701!5e0!3m2!1spt-BR!2sbr!4v1721701026697!5m2!1spt-BR!2sbr" },
