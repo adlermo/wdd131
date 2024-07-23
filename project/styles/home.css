@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Sono:wght@200..800&display=swap');
+
+:root {
+  --font-mono: 'Sono', sans-serif, monospace;
+  --font-serif: 'Antic Didone', serif;
+
+  --dark-blue: #124e78;
+  --light-blue: #3da5d9;
+  --dark-green: #497048;
+  --sand: #f0f0c9;
+  --salmon: #e15a51;
+
+  --white: #e0e0ea;
+  --black: #20202a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-mono);
+  /* font-weight: 600; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: var(--font-serif);
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+header {
+  background-color: var(--dark-blue);
+}
+
+header > section.logo {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+header > section.logo > img {
+  color: white;
+  margin-right: 0.8em;
+}
+
+header > section.logo > h1 {
+  color: var(--white);
+  font-size: 2em;
+}
+
+header > nav {
+  background-color: var(--light-blue);
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+header > nav > ul > li {
+  list-style: none;
+}
+
+header > nav > ul > li > a {
+  display: block;
+  padding: 1em 2em;
+  margin: 0 2em;
+  color: var(--black);
+  text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+  background-color: var(--sand);
+  box-shadow: inset 0 -10px 5px -10px var(--salmon);
+}
+
+main {
+  max-width: 1366px;
+  margin: 2em auto;
+}
+
+main > section.questions {
+  background-color: var(--sand);
+  border: 5px solid var(--dark-blue);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+main > section.questions > section.question_card {
+  margin: 1em;
+}
+
+main > section.questions > section.question_card > h3 {
+  margin-bottom: 1.5em;
+}
+
+main > section.lines {
+  background-color: var(--dark-blue);
+  padding: 2em;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+main > section.lines > section.line_list {
+  width: 95%;
+}
+
+main > section.lines > section.line_list > nav {
+  height: 98%;
+}
+
+main > section.lines > section.line_list > nav > ul {
+  background-color: var(--light-blue);
+}
+
+main > section.lines > section.line_list > nav > ul > li {
+  list-style: none;
+}
+
+main > section.lines > section.line_list > nav > ul > li > a {
+  display: block;
+  padding: 1em;
+
+  color: var(--black);
+  text-decoration: none;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+main > section.lines > section.line_list > nav > ul > li > a > img {
+  margin-right: 10px;
+}
+
+main > section.lines > section.line_list > nav > ul > li > a.active {
+  color: var(--sand);
+  background-color: var(--dark-green);
+  width: 107%;
+}
+
+main > section.lines > section.line_list > nav > ul > li > a:hover {
+  background-color: var(--sand);
+  border: 1px solid var(--dark-green);
+  color: var(--black);
+}
+
+main > section.lines > section.line_info {
+  border: 5px solid var(--dark-green);
+  min-height: 38rem;
+
+  min-width: 30rem;
+}
+
+main > section.lines > section.line_info > iframe#busStopAddress {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

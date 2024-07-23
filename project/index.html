@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD131 Final Project Home Page">
+    <meta name="author" content="Adler M Orteney">
+
+    <title>Brazinfo Inc Commute</title>
+
+
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/bus-solid.svg" alt="Site Logo" width="30" class="desktop" loading="lazy">
+            <h1>
+                Brazinfo Inc Commute
+            </h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Stop</a></li>
+                <li><a href="#">Manage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="questions">
+            <section class="question_card">
+                <h3>What are the available times for the bus to commute to work?</h3>
+                <p>
+                    All the available lines operate from 6 AM to 8 PM. During weekdays, all vehicles depart every 20
+                    minutes. However, during peak hours, which are from 7 AM to 10 AM and 4 PM to 7 PM, vehicles leave
+                    every 5 minutes due to the higher demand of people commuting to work.
+                </p>
+            </section>
+            <section class="question_card">
+                <h3>How can I find out if I missed the bus or if it's running late?</h3>
+                <p>
+                    In-time transport and excellence are key to Brazinfo Commute, but sometimes nature and other events
+                    may cause delays. All our vehicles have trackers to provide real-time locations, ensuring Brazinfo
+                    employees are always informed about the next bus's location.
+                </p>
+            </section>
+            <section class="question_card">
+                <h3>What should I do if the nearest bus stop is too far from my address?</h3>
+                <p>
+                    You can request an update to existing lines or the creation of a new line by navigating to the "New
+                    Stop" page and filling out the form. Please note that new stops or lines will be considered based on
+                    employee demand. If there are enough people to justify the changes, our team will update the lines
+                    accordingly.
+                </p>
+            </section>
+        </section>
+
+        <section class="lines">
+            <section class="line_list">
+                <nav>
+                    <ul id="lineList">
+                        <li>
+                            <a href="siteplan.html">
+                                <img src="images/square-plus-solid.svg" alt="Site Logo" width="20" loading="lazy">
+                                Add New Line
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="line_info">
+                <iframe src="https://www.google.com/maps/embed" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="busStopAddress"></iframe>
+            </section>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="scripts/index.js" defer></script>
+</body>
+
+</html>
