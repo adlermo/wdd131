@@ -6,13 +6,10 @@ const saveBusLine = (name, url) => {
     lines.push({ id: name, address: url });
 
     localStorage.setItem('lines', JSON.stringify(lines));
-    console.log("saving to localStorage");
-    console.log(lines)
 }
 
 
 document.addEventListener('submit', (e) => {
-    e.preventDefault()
     alert('New stop request successfully sent!');
 
     const lineId = e.target.querySelector('#lineId');

@@ -9,7 +9,6 @@ if (lines == null || lines.length == 0) {
     ]
 } else {
     lines = JSON.parse(lines);
-    console.log('Reading lines in localStorage')
 }
 
 localStorage.setItem('lines', JSON.stringify(lines))
