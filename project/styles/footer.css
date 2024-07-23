@@ -1,0 +1,22 @@
+:root {
+  --dark-blue: #124e78;
+  --light-blue: #3da5d9;
+  --dark-green: #497048;
+  --sand: #f0f0c9;
+  --salmon: #e15a51;
+
+  --white: #e0e0ea;
+  --black: #20202a;
+}
+
+footer {
+  background-color: var(--dark-green);
+  color: var(--white);
+
+  text-align: center;
+  padding: 2em;
+}
+
+footer > p > a {
+  color: var(--sand);
+}
