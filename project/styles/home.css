@@ -146,7 +146,7 @@ main > section.lines > section.line_list > nav > ul > li > a > img {
 main > section.lines > section.line_list > nav > ul > li > a.active {
   color: var(--sand);
   background-color: var(--dark-green);
-  width: 107%;
+  width: 106%;
 }
 
 main > section.lines > section.line_list > nav > ul > li > a:hover {
