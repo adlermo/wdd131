@@ -26,16 +26,24 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">New Stop</a></li>
-                <li><a href="login.html">Manage</a></li>
+                <li><a href="form.html">New Stop</a></li>
+                <li><a href="#">Manage</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <form action="" method="post">
+            <label for="user">
+                Username:
+                <input type="text" name="user" id="user">
+            </label>
 
-            <input type="submit" value="Send My Request">
+            <label for="pass">
+                Password:
+                <input type="password" name="pass" id="pass">
+            </label>
+            <input type="submit" value="Authenticate" id="auth">
         </form>
     </main>
 
